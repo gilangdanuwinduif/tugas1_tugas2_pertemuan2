@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Siswa</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <button>
+                <a href="/index.html">Kembali ke Home</a> 
+            </button>
+            
+        </nav>
+    </div>
+    <div>
+    <h1>Formulir Pendaftaran Siswa</h1>
+    <form action="#" method="post" enctype="multipart/form-data"> 
+        <label for="nama">Nama Calon Siswa:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="tempatLahir">Tempat Lahir:</label><br>
+        <select id="tempatLahir" name="tempatLahir">
+            <option value="Jakarta">Jakarta</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Yogyakarta">Yogyakarta</option>
+        </select><br><br>
+
+        <label for="tanggalLahir">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggalLahir" name="tanggalLahir" required><br><br>
+
+        <label for="agama">Agama:</label><br>
+        <select id="agama" name="agama">
+            <option value="Islam">Islam</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Katolik">Katolik</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Buddha">Buddha</option>
+            <option value="Konghucu">Konghucu</option>
+        </select><br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea><br><br>
+
+        <label for="noTelp">No.Telp/Hp:</label><br>
+        <input type="tel" id="noTelp" name="noTelp" pattern="[0-9]{8,13}" required><br><br>
+
+        <label>Jenis Kelamin:</label><br>
+        <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-Laki" required>
+        <label for="lakiLaki">Laki-Laki</label>
+        <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+        <label for="perempuan">Perempuan</label><br><br>
+
+        <label>Ekstrakulikuler:</label><br>
+        <input type="checkbox" id="paskibra" name="ekstrakulikuler[]" value="Paskibra">
+        <label for="paskibra">Paskibra</label>
+        <input type="checkbox" id="futsal" name="ekstrakulikuler[]" value="Futsal">
+        <label for="futsal">Futsal</label>
+        <input type="checkbox" id="basket" name="ekstrakulikuler[]" value="Basket">
+        <label for="basket">Basket</label>
+        <input type="checkbox" id="renang" name="ekstrakulikuler[]" value="Renang">
+        <label for="renang">Renang</label>
+        <input type="checkbox" id="tari" name="ekstrakulikuler[]" value="Tari">
+        <label for="tari">Tari</label><br><br>
+
+        <label for="pasFoto">Pas Foto:</label>
+        <input type="file" id="pasFoto" name="pasFoto" accept="image/*"><br><br>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Start"> 
+    </form>
+    </div>
+</body>
+</html>
